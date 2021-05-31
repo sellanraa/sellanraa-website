@@ -3,7 +3,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-end;
-  padding: 70%;
+  padding: 30%;
   background: url(../img/rockybeach.jpg) center / cover no-repeat #f3753b;
   height: 150px;
   align-content: center;
@@ -28,8 +28,8 @@ h1 {
   text-align: center;
   max-width: 300px;
   }
-  
-p {
+
+p { 
   padding: 1%;
   line-height: 1.25;
   border-style: solid;
@@ -40,9 +40,6 @@ p {
   width: 70%;
 }
 
-footer {
-  
-}
 
 @media screen and (min-width: 769px) {
   p {
