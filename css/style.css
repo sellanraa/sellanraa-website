@@ -5,7 +5,7 @@ header {
   background: url(../img/rockybeach.jpg) center / cover no-repeat #f3753b;
   color: rgba(255, 255, 255, 0.85);
   font-family: 'Advent Pro', sans-serif;
-  font-size: 10rem;
+  font-size: 6rem;
   padding: 0px;
   align-content: center;
   background-size: cover;
@@ -15,7 +15,7 @@ h1 {
   font-family: 'Advent Pro', sans-serif;
   font-size: 36px;
   text-align: center;
-  max-width: 500px;
+  max-width: 300px;
   }
   
 p {
@@ -32,5 +32,11 @@ p {
 @media screen and (min-width: 760px) {
   p {
     max-width: 500px;
+  }
+  h1 {
+    max-width: 500px;
+  }
+  header {
+    font-size: 10rem;
   }
 }
