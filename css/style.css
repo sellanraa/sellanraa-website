@@ -1,9 +1,9 @@
 .menu {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: flex-end;
   padding: 70%;
-  margin: -1rem -1rem 0rem;
   background: url(../img/rockybeach.jpg) center / cover no-repeat #f3753b;
   height: 150px;
   align-content: center;
@@ -13,7 +13,8 @@
   padding: 0px;
  }
 .logo {
-  margin-right: auto;
+  align-content: left;
+  flex-grow: 3;
   font-size: 6rem;
 }
 .menu-item {
@@ -39,21 +40,23 @@ p {
   width: 70%;
 }
 
-
 @media screen and (min-width: 760px) {
   p {
-    max-width: 500px;
+    max-width: 769px;
   }
   .menu {
-    margin: -1rem -1rem -1rem;
+    flex-direction: row;
     }
   h1 {
     max-width: 500px;
   }
+  p {
+    max-width: 500px;
+  }
   .logo {
     font-size: 10rem;
+    flex-grow: 3;
   }
   .menu-item {
     font-size: 3rem;
-  }
 }
