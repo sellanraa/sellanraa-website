@@ -1,0 +1,14 @@
+.menu {
+    display: flex;
+    padding: 70%;
+    margin: -3rem -1rem 0rem;
+    background: url(../img/rockybeach.jpg) center / cover no-repeat #f3753b;
+    flex-direction: row-reverse;
+    height: 100px;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 6rem;
+    padding: 0px;
+    align-content: center;
+    background-size: cover;
+   }
