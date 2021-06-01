@@ -59,6 +59,7 @@ p {
     flex-grow: 3;
   }
   .menu-item {
-    font-size: 3rem;
+    font-size: 1rem;
   }
 }
+
