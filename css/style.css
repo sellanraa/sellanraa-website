@@ -22,7 +22,7 @@
   font-size: 2rem;
 }
 h1 {
-  margin: 5px;
+  margin: auto;
   font-family: 'Advent Pro', sans-serif;
   font-size: 36px;
   text-align: center;
@@ -30,13 +30,14 @@ h1 {
   }
 
 h2 {
-  margin: 5px;
+  margin: auto;
   font-family: 'Advent Pro', sans-serif;
   font-size: 24px;
   text-align: center;
   max-width: 300px;
   }
 p { 
+  margin: auto;
   padding: 1%;
   line-height: 1.25;
   border-style: solid;
@@ -50,19 +51,19 @@ p {
 
 @media screen and (min-width: 769px) {
   p {
-    max-width: 769px;
+    max-width: 500px;
+    margin: auto;
   }
   .menu {
     flex-direction: row;
     }
   h1 {
     max-width: 500px;
+    margin: auto;
   }
   h2 {
     max-width: 500px;
-  }
-  p {
-    max-width: 500px;
+    margin: auto;
   }
   .logo {
     font-size: 10rem;
