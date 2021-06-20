@@ -1,25 +1,36 @@
-.menu {
+.main-nav-hdr {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  flex-direction: row;
   padding: 30%;
   background: url(../img/rockybeach.jpg) center / cover no-repeat #f3753b;
-  height: 150px;
-  align-content: center;
+  height: 12rem;
   background-size: cover;
   color: rgba(255, 255, 255, 0.85);
   font-family: 'Advent Pro', sans-serif;
   padding: 0px;
+  justify-content: space-around;
  }
+
 .logo {
   align-content: left;
-  flex-grow: 3;
-  font-size: 6rem;
+  flex-grow: 1;
+  font-size: 4rem;
+  line-height: 1em;
+  font-weight: 900;
 }
 .menu-item {
-	color: rgb(255, 255, 255);
-  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+a:hover {
+  color: #aa4b0c;
+  font-style: italic;
+
 }
 h1 {
   margin: auto;
@@ -41,7 +52,9 @@ p {
   padding: 1%;
   line-height: 1.25;
   border-style: solid;
-  border-radius: 20px;
+  border-width: thin;
+  border-radius: 10px;
+  border-color: orange;
   font-family: Helvetica;
   text-align: center;
   max-width: 300px;
@@ -66,11 +79,10 @@ p {
     margin: auto;
   }
   .logo {
-    font-size: 10rem;
-    flex-grow: 3;
+
   }
   .menu-item {
-    font-size: 1rem;
+
   }
 }
 
