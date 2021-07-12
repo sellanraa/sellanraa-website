@@ -148,6 +148,7 @@ body input:checked ~ nav > ul > ul {
   transition-delay: 0.5s;
 }
 
+/* Media Queries */
 @media screen and (min-width: 769px) {
   p {
     max-width: 500px;
