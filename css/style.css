@@ -41,6 +41,9 @@ form {
 body {
   background-color: #FCF5EC;
 }
+.navbar #menu {
+  display: none;
+}
 body h1 a {
   text-decoration: none;
   position: fixed;
@@ -121,12 +124,12 @@ body input ~ nav > ul {
   left: 20%;
   right: 20%;
 }
-body input ~ nav > ul > ul {
+body input ~ nav > ul > li {
   opacity: 0;
   transition: 0.5s;
   transition-delay: 0s;
 }
-body input ~ nav > ul > ul > a {
+body input ~ nav > ul > li > a {
   text-decoration: none;
   text-align: center;
   color: #544132;
@@ -136,14 +139,14 @@ body input ~ nav > ul > ul > a {
   display: block;
   padding: 0px;
 }
-body input ~ nav > ul > ul > a:hover {
+body input ~ nav > ul > li > a:hover {
   color: #E8D3B4;
 }
 body input:checked ~ nav {
   height: 100%;
   transition-delay: 0s;
 }
-body input:checked ~ nav > ul > ul {
+body input:checked ~ nav > ul > li {
   opacity: 1;
   transition-delay: 0.5s;
 }
