@@ -41,9 +41,11 @@ form {
 body {
   background-color: #FCF5EC;
 }
+/*
 .navbar #menu {
   display: none;
 }
+*/
 body h1 a {
   text-decoration: none;
   position: fixed;
