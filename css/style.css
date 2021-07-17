@@ -1,51 +1,45 @@
-h2 {
-  margin-top: 0.25rem;
-  font-family: 'Advent Pro', sans-serif;
-  font-size: 24px;
-  text-align: center;
-  max-width: 300px;
-  color: #544132;
-  }
-p { 
-  margin: auto;
-  padding: 1%;
-  line-height: 1.25;
-  border-style: solid;
-  border-width: thin;
-  border-radius: 10px;
-  border-color: #D0811C;
-  background-color: #FCF5EC;
-  color: #544132;
-  font-family: Helvetica;
-  text-align: center;
-  max-width: 300px;
-  width: 70%;
-}
-form {
-  margin: auto;
-  padding: 1%;
-  line-height: 1.25;
-  border-style: solid;
-  border-width: thin;
-  border-radius: 10px;
-  border-color: #D0811C;
-  background-color: #FCF5EC;
-  color: #544132;
-  font-family: Helvetica;
-  text-align: center;
-  max-width: 300px;
-  width: 70%;
-}
 
+body {
+  padding: 1rem;
+}
+h2 {
+  margin: 0.5rem;
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  max-width: 300px;
+  color: #544132;
+}
+section { 
+  margin: .25rem;
+  padding: 1%;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 5px;
+  border-color: #D0811C;
+  background-color: #FCF5EC;
+  color: #544132;
+  font-family: Helvetica;
+  text-align: center;
+  max-width: 300px;
+  width: 80%;
+  line-height: 1.25;
+}
+.portrait {
+  float: left;
+  margin: 0.5rem;
+  padding-right: 0.25rem;
+  padding-bottom: 0.25rem;
+  max-width: 10rem;
+  height: auto;
+}
 /* Burger menu jazz below */
+#burger {
+  visibility: hidden;
+}
 body {
   background-color: #FCF5EC;
 }
-/*
-.navbar #menu {
-  display: none;
-}
-*/
 body h1 a {
   text-decoration: none;
   position: fixed;
@@ -154,15 +148,38 @@ body input:checked ~ nav > div > li {
 }
 
 /* Media Queries */
-@media screen and (min-width: 769px) {
-  p {
-    max-width: 500px;
-    margin: auto;
-  h1 {
-    max-width: 500px;
-    margin: auto;
-  }
+@media screen and (min-width: 480px) {
   h2 {
-    max-width: 500px;
-    margin-top:10rem;
+    margin: auto;
   }
+  section {
+    max-width: 90%;
+    margin: .5rem;
+  }
+  p {
+    max-width: 90%;
+    margin: .5rem;
+  }
+  .portrait {
+    max-width: 12rem;
+  }
+  body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2vw 50vw 2vw;
+    grid-gap: 1rem;
+  }
+  
+  footer {
+    grid-column: 1 / span 3;
+    max-width: 100%;
+  }
+  
+  main {
+    grid-column: 1 / span 2;
+  }
+  
+  aside {
+    grid-column: 3 / span 1;
+  }
+}
