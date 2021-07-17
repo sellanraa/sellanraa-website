@@ -10,6 +10,14 @@ h2 {
   max-width: 300px;
   color: #544132;
 }
+h4 {
+  margin: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+  font-style: normal;
+  max-width: 300px;
+  color: #544132;
+}
 section { 
   margin: .25rem;
   padding: 1%;
@@ -24,6 +32,16 @@ section {
   max-width: 300px;
   width: 80%;
   line-height: 1.25;
+}
+a {
+  text-decoration: none;
+  color: #544132;
+}
+a, a:visited, a:active {
+  color: inherit;
+}
+a:hover {
+  color: #D0811C;
 }
 .portrait {
   float: left;
