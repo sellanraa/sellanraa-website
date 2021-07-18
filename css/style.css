@@ -1,74 +1,168 @@
 .wrapper {
 	display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 12rem 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "header"
     "content"
     "sidebar"
     "footer";
-  grid-gap: 1rem;
+  grid-gap: 0.5rem;
   grid-auto-flow: column;
+  height: 100vh;
   
-	color: #444;
+	color: gray;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
+.header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+  grid-area: header;
+  background: url(../img/rockybeach.jpg)center / cover no-repeat #f3753b;
+}
+.content {
+  grid-area: content;
+  background: #FCF5EC;
+}
+.sidebar {
+  grid-area: sidebar;
+  background: #F6EFE3;
+  }
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  background: url(../img/rockybeach.jpg) left bottom / cover no-repeat #f3753b;
+}
+body {
+  margin: 20px;
+  background: #9C9279;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.25rem;
+}
+.box {
+  color: #544132;
+  padding: 1rem;
+  border: 3px solid #5D483D;
+  border-radius: 25px;
+}
+p {
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+.explained {
+  margin-top: 10px;
+}
+h1 {
+  line-height: 0;
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.25rem;
+  font-size: 3rem;
+  color: #FCF5EC;
+  opacity: 0.9;
+}
+h2 {
+  font-family: "Spartan", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: -0.25rem;
+  text-align: center;
+  opacity: 0.9;
+  margin: 0rem 0rem 0rem 0rem;
+}
+.other-pages {
+  display:flex;
+  flex-direction: column;
+  font-family: "Spartan", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: -0.15rem;
+  margin: 0rem 0rem 0rem 0rem;
+  opacity: 0.9;
+}
+.home, .header-link {
+  text-decoration: none;
+  color: #FCF5EC;
+}
+.home:hover, .header-link:hover {
+  color:#EEDFC7;
+}
+li {
+  margin: 0rem 0rem 0rem 1rem;
+}
+.link {
+  text-decoration: none;
+  color: #5D483D;
+  text-align: center;
+}
+.link:hover {
+  color: #B57119;
+}
 .portrait {
   float: left;
-  width: 45%;
+  width: 50%;
   height: auto;
-  padding: 1rem;
+  padding: 0.5rem;
 }
+.copyright {
+  font-family: "Spartan", sans-serif;
+  font-weight: 300;
+  color: #FCF5EC;
+  font-size: 1rem;
+  padding-top: 1rem;
+  margin: 0rem 0rem 0rem 0rem;
+  text-align: right;
+}
+.linkedin, .email {
+  width: auto;
+  height: 36px;
+}
+
+
+
+
+
 @media (min-width: 800px) {
   .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10rem 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
       "header header header"
       "content content sidebar"
       "footer footer footer";
-    grid-gap: 1rem;
+    grid-gap: 0.5rem;
     grid-auto-flow: row;
   }
-}
-
-.header {
-	display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  grid-area: header;
-  background: #C0C0C0;
-}
-.content {
-	grid-area: content;
-  background: #F0F0F0;
-}
-
-.sidebar {
-	grid-area: sidebar;
-  background: #D0D0D0;
-	}
-
-.footer {
-	grid-area: footer;
-  background: #A0A0A0;
-}
-
-
-body {
-  margin: 20px;
-  background: #505050;
-  font-family: sans-serif;
-}
-
-.box {
-  color: #444;
-  padding: 20px;
-  font-size: 150%;
-  border: 2px solid #202020;
-  border-radius: 5px;
+  .other-pages {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 0rem;
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 6rem;
+    align-items: center;
+    letter-spacing: -0.6rem;
+  }
+  .header-link {
+    font-size: 3rem;
+    letter-spacing: -0.35rem;
+  }
+  h2 {
+    font-size: 3rem;
+    letter-spacing: -0.4rem;
+  }
+  .linkedin, .email {
+    width: auto;
+    height: 48px;
+    opacity: 0.8;
+  }
 }

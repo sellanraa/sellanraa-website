@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>sellanraa</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200;500&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;300;400;600;700;900&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/scripts.js"></script>
@@ -13,85 +14,62 @@
 
 <body>
 
-  <div class="parent-grid">
-
-<!-- begin header -->
-
-<header class="header">
-
-  <h1><a href="/index.html">sellanraa</a></h1>
-  <nav class="navbar">    
-    <div class="menu">
-      <a href="/theweens.html">the weens</a>
-      <a href="http://www.shedding.org" target="_blank">shedding</a>
-    </div>  
-  </nav>
-
-</header>
-
-<!-- end header -->
-
-<!-- begin main -->
-
-<section class="main-cont">
-
-  <main>
-
-    <section class="main-cont">
-
-      <main>
+  <div class="wrapper">
+  
+    <div class="box header">
+      <h1><a class="home" href="/index.html">sellanraa</a></h1>
+      <nav class="navbar">    
+        <div>
+          <a class="header-link" href="/theweens.html">the weens</a>
+          <a class="header-link" href="http://www.shedding.org" target="_blank">shedding</a>
+        </div>
+      </nav>
+    </div>
     
-          <h2>the weens</h2>
-    
+    <div class="box content">
+      <main class="who">
+        <h2>the weens</h2>
           <p>asdfasdfasdfasfasdfasdfasdfasdf</p>
+      </main>  
+    </div>
     
-      </main>
-
-  </main>
-
-  <aside>
-
-    <div class="">
-
-      <h2>pick a ween</h2>
+    <div class="box sidebar">
+      <div class="links">
+        <h2>pick a ween</h2>
       <ul>
-        <li><a href="/murphy.html">Murphy, the elder statesman</a></li>
-        <li><a href="/ruby.html">Ruby, the sweet and high energy little sister</a></li>
-        <li><a href="/tink.html">Tink, the confused and persnickety old lady</a></li>
-        <li><a href="/fosters.html">Our lovable former fosters</a></li>
+        <li><a class="link" href="/murphy.html">Murphy, the elder statesman</a></li>
+        <li><a class="link" href="/ruby.html">Ruby, the sweet and high energy little sister</a></li>
+        <li><a class="link" href="/tink.html">Tink, the confused and persnickety old lady</a></li>
+        <li><a class="link" href="/fosters.html">Our lovable former fosters</a></li>
       </ul>
       </p>
-
-    </div>
-
-
-    <div class="">
-
-      <h2>explained</h2>
+      </div>
+  
+      <div class="explained">
+        <h2>explained</h2>
       <p>My wife and I have fostered weens through the Kentucky Dachshund Rescue, on and off, for the past several years. They are my muse.
         <br><br>
         Some pictures are taken with my cell phone, a Google Pixel 3 (currently), since the best camera is the one you have with you. I also use a Sony A6000 camera with Sony 18-105mm f/4 and 35mm f/1.8 prime lenses.
       </p>
-
+      </div>   
     </div>
-
-  </aside>
-
-</section>
-
-<!-- end main -->
-
-
-<!-- begin footer -->
-
-<footer>
     
-  <p>&copy; 2021 Connor Bell </p>
+    <div class="box footer">
+        
+      <div clas="social">
+        <a href="https://www.linkedin.com/in/connor-bell-is-here" target="_blank">
+        <img class="linkedin" src="img/linkedin.png">
+        </a>  
+        <a href="mailto:shedding.sounds@gmail.com" target="_blank">
+        <img class="email" src="img/email.png">
+        </a>  
+      </div>
+      <p class="copyright">&copy;2021<br>Connor Bell </p>
+      
+    </div>
+    
+  </div>
 
-</footer>
-
-<!-- end footer -->
-
-</div> <!-- end main-cont -->
 
 </body>
+
