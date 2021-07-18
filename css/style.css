@@ -85,6 +85,7 @@ h2 {
   letter-spacing: -0.15rem;
   margin: 0rem 0rem 0rem 0rem;
   opacity: 0.9;
+  position: relative;
 }
 .home, .header-link {
   text-decoration: none;
@@ -124,10 +125,11 @@ li {
   height: 36px;
 }
 
+/* Burger menu jazz */
 
 
 
-
+/* Media query jazz */
 @media (min-width: 800px) {
   .wrapper {
     display: grid;
