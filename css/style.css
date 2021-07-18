@@ -28,7 +28,6 @@
   box-sizing: border-box;
   display: block;
   width: 100%;
-  border-top: 1px solid #333;
 }
 #hamnav label { 
   display: inline-block; 
@@ -42,6 +41,9 @@
 }
 #hamnav input:checked ~ #hamitems { 
   display: block; 
+}
+#hamnav input {
+  display: none;
 }
 .content {
   grid-area: content;
@@ -188,7 +190,7 @@ li {
   #hamitems { 
     display: flex; 
   }
-  #hamitems .header-link {
+  #hamitems .header-link .other-pages {
     flex-grow: 1;
     flex-basis: 0;
     padding: 10px;
@@ -197,7 +199,7 @@ li {
     text-align: center;
   }
   #hamnav label, #hamburger { 
-    display: none; 
+    display: none; v
   }
   .home:hover, .header-link:hover {
     color:#EEDFC7;
