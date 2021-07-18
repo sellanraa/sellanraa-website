@@ -14,11 +14,12 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   align-content: flex-start;
+  justify-content: space-around;
 }
 .parent-grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 8rem 1fr 8rem;
+  grid-template-rows: 10rem 1fr 8rem;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   width: 100%;
@@ -60,10 +61,10 @@ li {
   font-size: 5rem;
   align-content: flex-start;
 }
-.header-link, .menu  {
+.header-link  {
   text-decoration: none;
   color: #FCF5EC;
-  font-size: 2rem;
+  font-size: 1.5rem;
   align-content: flex-start;
 }
 .link:visited, .header-link:visited, home:visited {
@@ -78,9 +79,9 @@ li {
 }
 .portrait {
   width: 100%;
-  max-width: 25%;
+  max-width: 35%;
   float:left;
-  padding: 2rem;
+  padding: 0rem 1rem 0.5rem 0rem;
 }
 
 /* media query jazz */
