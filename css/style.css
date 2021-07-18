@@ -1,101 +1,69 @@
-html {
-  font-size: 16px;
-  font-family: "Helvetica";
+.wrapper {
+	display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 15rem 1fr 1fr 1fr;
+  grid-template-areas:
+    "header"
+    "content"
+    "sidebar"
+    "footer";
+  grid-gap: 1rem;
+  grid-auto-flow: column;
+  
+	color: #444;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
-body {
-  background-color: #FCF5EC;
+.portrait {
+  width: 10%;
+  height: auto;
+}
+@media (min-width: 800px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 15rem 1fr 1fr;
+    grid-template-areas:
+      "header header header"
+      "content content sidebar"
+      "footer footer footer";
+    grid-gap: 1rem;
+    grid-auto-flow: row;
+  }
 }
 
 .header {
-  background: url(../img/rockybeach.jpg) center / cover no-repeat #f3753b;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-content: flex-start;
-  justify-content: space-around;
-}
-.parent-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 10rem 1fr 8rem;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  width: 100%;
-  }
-
-.main-cont {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-content: flex-start;
-}
-h2 {
-  font-family: "Advent Pro";
-  text-align: center;
-}
-.who, .explained, .links {
-  padding: 0rem 1rem 1rem 1rem;
-  margin: 0rem 1rem 1rem 0rem;
-  line-height: 1.25;
-  border-style: solid;
-  border-width: 0px 15px 15px 0px;
-  border-radius: 15px 30px 90px 60px;
-  border-color: #B9B5AF;
-  color: #544132;
-}
-li {
-  padding: 0px 5px 0px 5px;
-  margin-left: 1rem;
-}
-.link {
-  text-decoration: none;
-  color: #544132;
-}
-.home {
-  text-decoration: none;
-  color: #FCF5EC;
-  font-size: 5rem;
-  align-content: flex-start;
-}
-.header-link  {
-  text-decoration: none;
-  color: #FCF5EC;
-  font-size: 1.5rem;
-  align-content: flex-start;
-}
-.link:visited, .header-link:visited, home:visited {
-  text-decoration: none;
-  color: inherit;
-}
-.header-link:hover, .home:hover {
-  color: #544132;
-}
-.link:hover {
-  color: #D58D19;
-}
-.portrait {
-  width: 100%;
-  max-width: 35%;
-  float:left;
-  padding: 0rem 1rem 0.5rem 0rem;
+	grid-area: header;
+  background: #C0C0C0;
 }
 
-/* media query jazz */
-@media screen and (min-width: 600px) {
-  .main-cont {
-    display: flex;
-    flex-direction: row;
-  }
-  .header {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-  }
-  .menu {
+.content {
+	grid-area: content;
+  background: #F0F0F0;
+}
 
-  }
+.sidebar {
+	grid-area: sidebar;
+  background: #D0D0D0;
+	}
+
+.footer {
+	grid-area: footer;
+  background: #A0A0A0;
+}
+
+
+body {
+  margin: 20px;
+  background: #505050;
+  font-family: sans-serif;
+}
+
+.box {
+  color: #444;
+  padding: 20px;
+  font-size: 150%;
+  border: 2px solid #202020;
+  border-radius: 5px;
 }
