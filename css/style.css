@@ -18,29 +18,38 @@
 }
 .header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   text-align: center;
   flex-wrap: wrap;
   grid-area: header;
-  background: url(../img/rockybeach.jpg)center / cover no-repeat #f3753b;
+  background: url(../img/rockybeach.jpg) top center / cover no-repeat;
 }
 #hamitems a {
   box-sizing: border-box;
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
 #hamnav label { 
-  display: inline-block; 
+  display: flex; 
   color: white;
-  font-style: normal;
-  font-size: 1.2em;
-  padding: 10px;
+  font-style: bold;
+  font-size: 2.75rem;
+  padding: 0rem;
+  opacity: 0.85;
+}
+label:hover {
+  cursor: pointer;
 }
 #hamitems { 
   display: none; 
 }
 #hamnav input:checked ~ #hamitems { 
-  display: block; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 #hamnav input {
   display: none;
@@ -84,9 +93,9 @@ h1 {
   font-family: "Spartan", sans-serif;
   font-weight: 700;
   letter-spacing: -0.25rem;
-  font-size: 3rem;
+  font-size: 2.75rem;
   color: #FCF5EC;
-  opacity: 0.9;
+  opacity: 0.85;
 }
 h2 {
   font-family: "Spartan", sans-serif;
@@ -94,12 +103,12 @@ h2 {
   font-size: 1.5rem;
   letter-spacing: -0.25rem;
   text-align: center;
-  opacity: 0.9;
+  opacity: 0.85;
   margin: 0rem 0rem 0rem 0rem;
 }
 .other-pages, .header-link {
   display:flex;
-  flex-direction: column;
+  flex-direction: row;
   font-family: "Spartan", sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
@@ -111,6 +120,7 @@ h2 {
 .home, .header-link {
   text-decoration: none;
   color: #FCF5EC;
+  justify-content: center;
 }
 .home:hover, .header-link:hover {
   color:#EEDFC7;
@@ -121,7 +131,6 @@ li {
 .link {
   text-decoration: none;
   color: #5D483D;
-  text-align: center;
 }
 .link:hover {
   color: #B57119;
