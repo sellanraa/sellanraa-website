@@ -1,7 +1,7 @@
 .wrapper {
 	display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 15rem 1fr 1fr 1fr;
+  grid-template-rows: 12rem 1fr 1fr 1fr;
   grid-template-areas:
     "header"
     "content"
@@ -12,18 +12,20 @@
   
 	color: #444;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .portrait {
-  width: 10%;
+  float: left;
+  width: 45%;
   height: auto;
+  padding: 1rem;
 }
 @media (min-width: 800px) {
   .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 15rem 1fr 1fr;
+    grid-template-rows: 10rem 1fr 1fr;
     grid-template-areas:
       "header header header"
       "content content sidebar"
@@ -34,10 +36,13 @@
 }
 
 .header {
-	grid-area: header;
+	display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  grid-area: header;
   background: #C0C0C0;
 }
-
 .content {
 	grid-area: content;
   background: #F0F0F0;
