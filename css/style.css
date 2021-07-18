@@ -24,6 +24,25 @@
   grid-area: header;
   background: url(../img/rockybeach.jpg)center / cover no-repeat #f3753b;
 }
+#hamitems a {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-top: 1px solid #333;
+}
+#hamnav label { 
+  display: inline-block; 
+  color: white;
+  font-style: normal;
+  font-size: 1.2em;
+  padding: 10px;
+}
+#hamitems { 
+  display: none; 
+}
+#hamnav input:checked ~ #hamitems { 
+  display: block; 
+}
 .content {
   grid-area: content;
   background: #FCF5EC;
@@ -76,7 +95,7 @@ h2 {
   opacity: 0.9;
   margin: 0rem 0rem 0rem 0rem;
 }
-.other-pages {
+.other-pages, .header-link {
   display:flex;
   flex-direction: column;
   font-family: "Spartan", sans-serif;
@@ -164,5 +183,23 @@ li {
     width: auto;
     height: 48px;
     opacity: 0.8;
+  }
+
+  #hamitems { 
+    display: flex; 
+  }
+  #hamitems .header-link {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+  #hamnav label, #hamburger { 
+    display: none; 
+  }
+  .home:hover, .header-link:hover {
+    color:#EEDFC7;
   }
 }
