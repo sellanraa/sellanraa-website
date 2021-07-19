@@ -33,6 +33,9 @@
   align-items: center;
   justify-content: space-between;
 }
+
+/* Start burger menu jazz */
+
 #hamitems a {
   box-sizing: border-box;
   display: flex;
@@ -60,6 +63,9 @@ label:hover {
 #hamnav input {
   display: none;
 }
+
+/* End burger menu jazz */
+
 .content {
   grid-area: content;
   background: #FCF5EC;
@@ -123,6 +129,7 @@ h2 {
   margin: 0rem 0rem 0rem 0rem;
   opacity: 0.9;
   position: relative;
+  white-space: nowrap;
 }
 .home, .header-link {
   text-decoration: none;
