@@ -11,33 +11,41 @@
   grid-auto-flow: column;
   height: 100vh;
   
-	color: gray;
+	color: #D4D1CE;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
 .header {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  text-align: center;
+  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   grid-area: header;
-  background: url(../img/rockybeach.jpg) top center / cover no-repeat;
+  background: url(../img/rockybeach.jpg) top / cover no-repeat;
+}
+.top-header {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
 }
 #hamitems a {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   width: 100%;
+  text-align: center;
 }
 #hamnav label { 
   display: flex; 
   color: white;
-  font-style: bold;
-  font-size: 2.75rem;
-  padding: 0rem;
+  font-size: 3rem;
   opacity: 0.85;
+  padding: 0.45rem 1rem 0 0.5rem;
 }
 label:hover {
   cursor: pointer;
@@ -48,8 +56,6 @@ label:hover {
 #hamnav input:checked ~ #hamitems { 
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
 }
 #hamnav input {
   display: none;
@@ -68,22 +74,22 @@ label:hover {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  background: url(../img/rockybeach.jpg) left bottom / cover no-repeat #f3753b;
+  background: url(../img/rockybeach.jpg) top center / cover no-repeat #f3753b;
 }
 body {
   margin: 20px;
-  background: #9C9279;
+  background: #CDC8BC;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1.25rem;
 }
 .box {
   color: #544132;
-  padding: 1rem;
+  padding: 0.5rem;
   border: 3px solid #5D483D;
   border-radius: 25px;
 }
 p {
-  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  margin: 0.25rem 0.5rem 0.25rem 0.5rem;
 }
 .explained {
   margin-top: 10px;
@@ -93,17 +99,18 @@ h1 {
   font-family: "Spartan", sans-serif;
   font-weight: 700;
   letter-spacing: -0.25rem;
-  font-size: 2.75rem;
+  font-size: 3rem;
   color: #FCF5EC;
-  opacity: 0.85;
+  opacity: 0.9;
 }
 h2 {
   font-family: "Spartan", sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
-  letter-spacing: -0.25rem;
+  letter-spacing: -0.15rem;
   text-align: center;
   opacity: 0.85;
+  padding: 0.5rem;
   margin: 0rem 0rem 0rem 0rem;
 }
 .other-pages, .header-link {
@@ -111,7 +118,7 @@ h2 {
   flex-direction: row;
   font-family: "Spartan", sans-serif;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 2rem;
   letter-spacing: -0.15rem;
   margin: 0rem 0rem 0rem 0rem;
   opacity: 0.9;
@@ -123,7 +130,7 @@ h2 {
   justify-content: center;
 }
 .home:hover, .header-link:hover {
-  color:#EEDFC7;
+  color:#E8D3B4;
 }
 li {
   margin: 0rem 0rem 0rem 1rem;
@@ -158,7 +165,7 @@ li {
 /* Burger menu jazz */
 
 /* Media query jazz */
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -170,45 +177,41 @@ li {
     grid-gap: 0.5rem;
     grid-auto-flow: row;
   }
-  .other-pages {
-    display:flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 0rem;
-    font-size: 2rem;
-  }
+
   h1 {
-    font-size: 6rem;
+    font-size: 6.5rem;
     align-items: center;
-    letter-spacing: -0.6rem;
+    letter-spacing: -0.65rem;
   }
   .header-link {
-    font-size: 3rem;
+    font-size: 3.25rem;
     letter-spacing: -0.35rem;
   }
+  .header {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
   h2 {
-    font-size: 3rem;
-    letter-spacing: -0.4rem;
+    font-size: 2.25rem;
+    letter-spacing: -0.25rem;
   }
   .linkedin, .email {
     width: auto;
     height: 48px;
     opacity: 0.8;
   }
-
   #hamitems { 
     display: flex; 
+    flex-direction: column;
+    justify-content: center;
   }
   #hamitems .header-link .other-pages {
-    flex-grow: 1;
-    flex-basis: 0;
-    padding: 10px;
     color: white;
     text-decoration: none;
-    text-align: center;
+    
   }
   #hamnav label, #hamburger { 
-    display: none; v
+    display: none;
   }
   .home:hover, .header-link:hover {
     color:#EEDFC7;
