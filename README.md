@@ -1,4 +1,6 @@
-**This page is meant to serve as a splash page for a few different things.**
+**Intro**
+
+This page is meant to serve as a splash page for a few different things.
 
 First, a quick introduction to who I am, share my CV, and offer some writing samples. Maybe eventually I'll create a markdown blog, but I'm not sure I'm that committed to that sort of pursuit.
 
@@ -13,6 +15,6 @@ First, I worked on the burger menu.
 
 I've also used flexbox and grid to aid with formatting for various screen sized.
 
-__I'm not sure I'll get to accessibility, but that is my goal this week__
+I'm not sure I'll get to accessibility, but that is my goal this week__
 
-As far as Javascript, I've inserted a random image loader for the main/bio page (index.html) and __I'm hoping to integrate the option to enlarge photos as well__
+As far as Javascript, I've inserted a random image loader for the main/bio page (index.html) and I'm hoping to integrate the option to enlarge photos as well__
