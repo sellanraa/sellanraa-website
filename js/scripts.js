@@ -22,11 +22,21 @@ var image =
 image.src = images[Math.floor(Math.random() * Math.floor(images.length))]
 // ===============================================================================
 // Enlarge ween photo interface
-$(document).ready(function() {
-    $('.weens').click(function() {
-      $(this).css('width', function(_, cur) {
-        return cur === '100px' ? '100%' : '100px'
-      });
+
+const images = document.querySelectorAll(".weens img");
+const modal = document.querySelector(".modal");
+const modalImg = document.querySelector(".modalImg");
+const modalTxt = document.querySelector(".modalTxt");
+const close = docuement.querySelector(".close");
+
+images.forEach((image => {
+    image.addEventListener("click", () => {
+        modalImg.src = image.src;
+        modalTxt.innerHTML = image.alt;
+        modal.classList.add("appear");
+        
+        close.addEventListener("click", () => {
+            modal.classList.remove("appear");
+        });
     });
-  });
- 
+});
