@@ -232,14 +232,6 @@ li {
     justify-content: space-evenly;
     align-items: center;
   }
-  .foster {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .foster-bio {
-    width: 30%;
-  }
 }
 /* Media query jazz for small full screen */
 @media (min-width: 769px) and (max-width:1024px) {
