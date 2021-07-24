@@ -23,7 +23,7 @@
   justify-content: space-between;
   align-items: center;
   grid-area: header;
-  background: url(../img/rockybeach.jpg) top / cover no-repeat;
+  background: url(../img/rockybeach.jpg) top / cover no-repeat #D58D19;
 }
 .top-header {
   display: flex;
@@ -80,7 +80,7 @@ label:hover {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  background: url(../img/rockybeach.jpg) top center / cover no-repeat #f3753b;
+  background: url(../img/rockybeach.jpg) top center / cover no-repeat #D58D19;
 }
 body {
   margin: 0.5rem;
