@@ -20,6 +20,13 @@ var image =
     document.getElementById('random-image');
 
 image.src = images[Math.floor(Math.random() * Math.floor(images.length))]
-
+// ===============================================================================
 // Enlarge ween photo interface
-
+$(document).ready(function() {
+    $('.weens').click(function() {
+      $(this).css('width', function(_, cur) {
+        return cur === '100px' ? '100%' : '100px'
+      });
+    });
+  });
+ 
