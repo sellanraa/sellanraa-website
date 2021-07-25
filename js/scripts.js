@@ -23,13 +23,13 @@ image.src = images[Math.floor(Math.random() * Math.floor(images.length))]
 // ===============================================================================
 // Enlarge ween photo interface
 
-const images = document.querySelectorAll(".weens img");
+const images = document.querySelectorAll(".weens");
 const modal = document.querySelector(".modal");
 const modalImg = document.querySelector(".modalImg");
 const modalTxt = document.querySelector(".modalTxt");
-const close = docuement.querySelector(".close");
+const close = document.querySelector(".close");
 
-images.forEach((image => {
+images.forEach((image) => {
     image.addEventListener("click", () => {
         modalImg.src = image.src;
         modalTxt.innerHTML = image.alt;
