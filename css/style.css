@@ -179,7 +179,7 @@ li {
 }
 .linkedin, .email {
   width: auto;
-  height: 36px;
+  height: 48px;
   margin-top: 0.5rem;
   padding-left: 0.25rem;
   opacity: 0.8;
@@ -222,12 +222,12 @@ li {
   text-align: center;
   padding-top: 1rem;
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 450px;
 }
 .close {
   position: absolute;
-  top: 2rem;
-  right: 2rem;
+  top: 3rem;
+  right: 3rem;
   font-size: 2rem;
   cursor: pointer;
 }
@@ -320,7 +320,7 @@ li {
     text-align: center;
     padding-top: 1rem;
     margin: 0 auto;
-    max-width: 500px;
+    max-width: 450px;
   }
 }
 /* Media query jazz for small full screen */
@@ -406,7 +406,7 @@ li {
     text-align: center;
     padding-top: 1rem;
     margin: 0 auto;
-    max-width: 550px;
+    max-width: 500px;
   }
 }
 
@@ -492,6 +492,6 @@ li {
     text-align: center;
     padding-top: 1rem;
     margin: 0 auto;
-    max-width: 625px;
+    max-width: 575px;
   }
 }
