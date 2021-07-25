@@ -52,6 +52,7 @@
 }
 label:hover {
   cursor: pointer;
+  color:#E8D3B4;
 }
 #hamitems { 
   display: none; 
@@ -176,6 +177,10 @@ li {
   height: 36px;
   margin-top: 0.5rem;
   padding-left: 0.25rem;
+  opacity: 0.8;
+}
+.linkedin:hover, .email:hover {
+  color:#E8D3B4;
 }
 /* pictures end */
 
@@ -372,6 +377,9 @@ li {
     width: auto;
     height: 48px;
     opacity: 0.8;
+  }
+  .linkedin:hover, .email:hover {
+    color:#E8D3B4;
   }
   #hamitems { 
     display: flex; 

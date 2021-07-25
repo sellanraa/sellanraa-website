@@ -1,7 +1,7 @@
 // Random 'who i am' photo loader
 
-var portraits = [
-    './img/me/me01.jpg',make
+var portrait = [
+    './img/me/me01.jpg',
     './img/me/me02.jpg',
     './img/me/me03.jpg',
     './img/me/me04.jpg',
@@ -14,29 +14,42 @@ var portraits = [
     './img/me/me11.jpg',
     './img/me/me12.jpg',
     './img/me/me13.jpg'
-];
+    ];
 
 var image = 
     document.getElementById('random-image');
 
-image.src = portraits[Math.floor(Math.random() * Math.floor(portraits.length))]
+image.src = portrait[Math.floor(Math.random() * Math.floor(portrait.length))]
 // ===============================================================================
 // Enlarge ween photo interface
 
-const images = document.querySelectorAll(".images .weens");
-const modal = document.querySelector(".modal");
-const modalImg = document.querySelector(".modalImg");
-const modalTxt = document.querySelector(".modalTxt");
-const close = document.querySelector(".close");
+// const images = document.querySelectorAll(".images .weens");
+// const modal = document.querySelector(".modal");
+// const modalImg = document.querySelector(".modalImg");
+// const modalTxt = document.querySelector(".modalTxt");
+// const close = document.querySelector(".close");
 
-images.forEach((image) => {
-    image.addEventListener("click", () => {
-        modalImg.src = image.src;
-        modalTxt.innerHTML = image.alt;
-        modal.classList.add("appear");
+// images.forEach((image) => {
+//     image.addEventListener("click", () => {
+//         modalImg.src = image.src;
+//         modalTxt.innerHTML = image.alt;
+//         modal.classList.add("appear");
         
-        close.addEventListener("click", () => {
-            modal.classList.remove("appear");
-        });
-    });
-});
+//         close.addEventListener("click", () => {
+//             modal.classList.remove("appear");
+//         });
+//     });
+// });
+
+// var modal = document.getElementsByClassName("modal");
+
+// var img = document.getElementsByClassName("weens");
+// var modalImg = document.getElementById("");
+
+// for(i = 0; i < image.length; i++)
+//     {
+//         img[i].onclick = function*() {
+//             modal.style.display = "block";
+//                 modalImg.src =
+//         }
+//     }
