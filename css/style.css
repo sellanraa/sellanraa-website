@@ -234,6 +234,9 @@ li {
     cursor: pointer;
     transition: 0.3s all ease;
   }
+  .weens:hover {
+    transform: scale(0.9);
+  }
   .ween-gallery {
     display: flex;
     flex-direction: row;
@@ -311,6 +314,9 @@ li {
     margin: 0.125rem;
     cursor: pointer;
     transition: 0.3s all ease;
+  }
+  .weens:hover {
+    transform: scale(0.9);
   }
   .ween-gallery {
     display: flex;
