@@ -179,9 +179,6 @@ li {
   padding-left: 0.25rem;
   opacity: 0.8;
 }
-.linkedin:hover, .email:hover {
-  color:#E8D3B4;
-}
 /* pictures end */
 
 /* Enlarge photos on click */
@@ -377,9 +374,6 @@ li {
     width: auto;
     height: 48px;
     opacity: 0.8;
-  }
-  .linkedin:hover, .email:hover {
-    color:#E8D3B4;
   }
   #hamitems { 
     display: flex; 
