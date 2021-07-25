@@ -1,6 +1,6 @@
 // Random 'who i am' photo loader
 
-var images = [
+var portraits = [
     './img/me/me01.jpg',
     './img/me/me02.jpg',
     './img/me/me03.jpg',
@@ -19,11 +19,11 @@ var images = [
 var image = 
     document.getElementById('random-image');
 
-image.src = images[Math.floor(Math.random() * Math.floor(images.length))]
+image.src = portraits[Math.floor(Math.random() * Math.floor(portraits.length))]
 // ===============================================================================
 // Enlarge ween photo interface
 
-const images = document.querySelectorAll(".weens");
+const images = document.querySelectorAll(".images img");
 const modal = document.querySelector(".modal");
 const modalImg = document.querySelector(".modalImg");
 const modalTxt = document.querySelector(".modalTxt");
