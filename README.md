@@ -19,4 +19,4 @@ I've also used flexbox and grid to aid with formatting for various screen sized.
 
 I'm not sure I'll get to accessibility, but that is my goal this week__
 
-As far as Javascript, I've inserted a random image loader for the main/bio page (index.html) and I'm hoping to integrate the option to enlarge photos as well__
+As far as Javascript, I've inserted a random image loader for the main/bio page (index.html) and I've integrated the option to enlarge ween photos as well on each of the dog pages.
