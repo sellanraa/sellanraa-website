@@ -125,7 +125,7 @@ h2 {
   flex-direction: row;
   font-family: "Spartan", sans-serif;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 2.25rem;
   letter-spacing: -0.15rem;
   margin: 0rem 0rem 0rem 0rem;
   opacity: 0.9;
@@ -254,12 +254,12 @@ li {
     margin: 1rem;
   }
   h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
     align-items: center;
     letter-spacing: -0.5rem;
   }
   .header-link {
-    font-size: 1.75rem;
+    font-size: 2.5rem;
     letter-spacing: -0.25rem;
   }
   .header {
