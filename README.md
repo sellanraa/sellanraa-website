@@ -6,6 +6,8 @@ First, a quick introduction to who I am, share my CV, and offer some writing sam
 
 Second, a page for my dogs, because some of my friends enjoy them.
 
+One question I couldn't resolve was how to somehow constrain the one portrait picture of the dog, Coco, on my fosters page, when basically every other photo is more of a landscape layout. I just accepted this a a minor layout flaw.
+
 Finally, eventually I hope to integrate my music project into this domain, but right now it's still over on WordPress and my vision for that is beyond what I can pull off myself.
 
 

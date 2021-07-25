@@ -2,7 +2,7 @@
 // ===============================================================================
 // Enlarge ween photo interface
 
-const images = document.querySelectorAll(".images .weens");
+const images = document.querySelectorAll(".ween-gallery .weens");
 const modal = document.querySelector(".modal");
 const modalImg = document.querySelector(".modalImg");
 const modalTxt = document.querySelector(".modalTxt");
