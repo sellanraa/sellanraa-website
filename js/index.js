@@ -1,4 +1,5 @@
-// Random 'who i am' photo loader
+// Random 'who i am' portrait loader with some math
+
 
 var portrait = [
     './img/me/me01.jpg',

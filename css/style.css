@@ -157,11 +157,13 @@ li {
   height: auto;
   border-radius: 1.5rem;
   margin-bottom: 0.25rem;
+  transition: 0.3s all ease;
 }
 .weens {
   width: 100%;
   border-radius: 1.5rem;
   cursor: pointer;
+  transition: 0.3s all ease;
 }
 .weens:hover {
   transform: scale(0.9);
@@ -181,6 +183,10 @@ li {
   margin-top: 0.5rem;
   padding-left: 0.25rem;
   opacity: 0.8;
+  transition: 0.3s all ease;
+}
+.linkedin:hover, .email:hover {
+  transform: scale(1.2);
 }
 /* pictures end */
 
@@ -354,6 +360,7 @@ li {
     width: auto;
     height: 48px;
     opacity: 0.8;
+    transition: 0.3s all ease;
   }
   #hamitems { 
     display: flex; 
