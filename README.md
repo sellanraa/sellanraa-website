@@ -13,7 +13,7 @@ Finally, eventually I hope to integrate my music project into this domain, but r
 
 **Which 3+ features you have included from the below lists to meet the requirements**
 
-As for CSS, first, I worked on the burger menu. Second, I've also used flexbox and grid to aid with formatting for various screen sizes.
+As for CSS, first, I worked on the burger menu for mobile viewing. Second, I've also used flexbox and grid to aid with formatting for various screen sizes.
 
 I looked into accessibility issues and I tried to add alt tags, but when I sent my page through the w3 validator it said I can't use alt tags in divs and well, I just don't have the gusto at this point after some insane weekends of work. There were some other issues like li being inside of divs when they're supposed to be in different containers, etc. etc. The contrast I believe is adequate. I shifted some sizes to accommodate for the 44px minimum size, but I'm sure I have a long ways to go on accessibility.
 
