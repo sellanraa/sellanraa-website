@@ -13,6 +13,8 @@ const close = document.querySelector(".close");
 close.addEventListener("click", () => {
     modal.classList.remove("appear");
 });
+
+// forEach loop
 images.forEach(addImageEventListener);
 
 // Function to replace modalImg and modalTxt with specific image and alt text
