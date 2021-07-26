@@ -1,0 +1,564 @@
+.wrapper {
+	display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "header"
+    "content"
+    "sidebar"
+    "footer";
+  grid-gap: 0.5rem;
+  grid-auto-flow: column;
+  height: 100vh;
+  
+	color: #D4D1CE;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: header;
+  background: url(../img/rockybeach.jpg) top / cover no-repeat #D58D19;
+}
+.top-header {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Start burger menu jazz */
+
+#hamitems a {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+#hamnav label { 
+  display: flex; 
+  color: white;
+  font-size: 3rem;
+  opacity: 0.85;
+  padding: 0.45rem 1rem 0 0.5rem;
+}
+label:hover {
+  cursor: pointer;
+  color:#E8D3B4;
+}
+#hamitems { 
+  display: none; 
+}
+#hamnav input:checked ~ #hamitems { 
+  display: flex;
+  flex-direction: column;
+}
+#hamnav input {
+  display: none;
+}
+
+/* End burger menu jazz */
+
+.content {
+  grid-area: content;
+  background: #FCF5EC;
+}
+#currents {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  }
+.currents-item {
+  min-width: 280px;
+  border: solid 2px;
+  border-radius: 0.75rem;
+  margin: 0rem 0rem 1rem 0rem;
+}
+.currents-list-item {
+  line-height: 1.25rem;
+  padding: 0rem 0.5rem 0.5rem 0rem;
+  text-align: center;
+}
+.sidebar {
+  grid-area: sidebar;
+  background: #F6EFE3;
+}
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  background: url(../img/rockybeach.jpg) top center / cover no-repeat #D58D19;
+}
+body {
+  margin: 0.5rem;
+  background: #CDC8BC;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.25rem;
+}
+.box {
+  color: #544132;
+  padding: 0.5rem;
+  border: 3px solid #5D483D;
+  border-radius: 2rem;
+}
+p {
+  margin: 0.25rem 0.5rem 0.25rem 0.5rem;
+  line-height: 1.25rem;
+}
+.explained {
+  margin-top: 10px;
+}
+h1 {
+  line-height: 0;
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.25rem;
+  font-size: 3rem;
+  color: #FCF5EC;
+  opacity: 0.9;
+}
+h2 {
+  font-family: "Spartan", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: -0.15rem;
+  text-align: center;
+  opacity: 0.85;
+  padding: 0.5rem;
+  margin: 0rem 0rem 0rem 0rem;
+}
+h3 {
+  flex-grow: 5;
+  font-family: "Spartan", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: -0.15rem;
+  text-align: center;
+  background-color: #EEDFC7;
+  opacity: 0.85;
+  padding: 0rem;
+  margin: auto;
+  max-width: 5.5rem;
+
+}
+h4 {
+  flex-grow: 5;
+  font-family: "Spartan", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: -0.15rem;
+  text-align: center;
+  opacity: 0.85;
+  padding: 0rem;
+  margin: 0rem 0rem 0rem 0rem;
+}
+.other-pages, .header-link {
+  display:flex;
+  flex-direction: row;
+  font-family: "Spartan", sans-serif;
+  font-weight: 600;
+  font-size: 2.25rem;
+  letter-spacing: -0.15rem;
+  margin: 0rem 0rem 0rem 0rem;
+  opacity: 0.9;
+  position: relative;
+  white-space: nowrap;
+}
+.home, .header-link {
+  text-decoration: none;
+  color: #FCF5EC;
+  justify-content: center;
+}
+.home:hover, .header-link:hover {
+  color:#E8D3B4;
+}
+li {
+  margin: 0rem 0rem 0rem 1.25rem;
+  line-height: 1.25rem;
+}
+.link {
+  text-decoration: none;
+  color: #5D483D;
+  margin: 0rem 0rem 0rem 0rem;
+  line-height: 1.5rem;
+}
+.link:hover {
+  color: #B57119;
+}
+
+/* pictures start */
+.portrait {
+  width: 100%;
+  height: auto;
+  border-radius: 1.5rem;
+  margin-bottom: 0.25rem;
+  transition: 0.3s all ease;
+}
+.weens {
+  width: 100%;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+.weens:hover {
+  transform: scale(0.9);
+}
+.copyright {
+  font-family: "Spartan", sans-serif;
+  font-weight: 300;
+  color: #FCF5EC;
+  font-size: 1rem;
+  padding-top: 1rem;
+  margin: 0rem 0rem 0rem 0rem;
+  text-align: right;
+}
+.linkedin, .email {
+  width: auto;
+  height: 48px;
+  margin-top: 0.5rem;
+  padding-left: 0.25rem;
+  opacity: 0.8;
+  transition: 0.3s all ease;
+}
+.linkedin:hover, .email:hover {
+  transform: scale(1.2);
+}
+/* pictures end */
+
+/* Enlarged ween gallery */
+.modal {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color:rgba(97, 88, 72, 0.9);
+  color: #fff;
+  z-index: 1;
+  overflow: auto;
+  opacity: 0;
+  pointer-events: none;
+}
+.modalContent {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.modalImg {
+  width: 95%;
+  max-width: 500px;
+  margin: 0 auto;
+  animation: zoom 0.3s linear;
+  border-radius: 1.5rem;
+}
+.modalTxt {
+  text-align: center;
+  padding-top: 1rem;
+  margin: 0 auto;
+  max-width: 450px;
+}
+.close {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.modal.appear {
+  opacity: 1;
+  pointer-events: all;
+}
+.modal.appear .modalImg,
+.modal.appear .modalTxt {
+  animation: zoom 0.3s linear;
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/* ================================================================== */
+/* Media query jazz for tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    margin: 1rem;
+  }
+  h1 {
+    font-size: 4rem;
+    align-items: center;
+    letter-spacing: -0.5rem;
+  }
+  .header-link {
+    font-size: 2.25rem;
+    letter-spacing: -0.25rem;
+  }
+  .header {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .currents-item {
+    max-width: 425px;
+    min-width: 425px;
+    border: solid 2px;
+    border-radius: 0.75rem;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    letter-spacing: -0.2rem;
+  }
+  .linkedin, .email {
+    width: auto;
+    height: 48px;
+    opacity: 0.8;
+  }
+  #hamitems { 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+  }
+  #hamitems .header-link .other-pages {
+    color: white;
+    text-decoration: none;
+    
+  }
+  #hamnav label, #hamburger { 
+    display: none;
+  }
+  .home:hover, .header-link:hover {
+    color:#EEDFC7;
+  }
+  /* image adjustments  */
+  .weens {
+    width: 48%;
+    border-radius: 1.5rem;
+    margin: 0.125rem;
+    cursor: pointer;
+    transition: 0.3s all ease;
+  }
+  .weens:hover {
+    transform: scale(0.9);
+  }
+  .ween-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .modalImg {
+    width: 95%;
+    max-width: 500px;
+    margin: 0 auto;
+    animation: zoom 0.3s linear;
+    border-radius: 1.5rem;
+  }
+  .modalTxt {
+    text-align: center;
+    padding-top: 1rem;
+    margin: 0 auto;
+    max-width: 450px;
+  }
+}
+/* Media query jazz for small full screen */
+@media (min-width: 769px) and (max-width:1024px) {
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "header header header"
+      "content content sidebar"
+      "footer footer footer";
+    grid-gap: 0.5rem;
+    grid-auto-flow: row;
+  }
+  body {
+    margin: 2rem;
+  }
+  h1 {
+    font-size: 6.5rem;
+    align-items: center;
+    letter-spacing: -0.65rem;
+  }
+  .header-link {
+    font-size: 3.25rem;
+    letter-spacing: -0.35rem;
+  }
+  .header {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .currents-item {
+    max-width: 425px;
+    min-width: 425px;
+    border: solid 2px;
+    border-radius: 0.75rem;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+  h2 {
+    font-size: 2.25rem;
+    letter-spacing: -0.25rem;
+  }
+  .linkedin, .email {
+    width: auto;
+    height: 48px;
+    opacity: 0.8;
+    transition: 0.3s all ease;
+  }
+  #hamitems { 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+  }
+  #hamitems .header-link .other-pages {
+    color: white;
+    text-decoration: none;
+    
+  }
+  #hamnav label, #hamburger { 
+    display: none;
+  }
+  .home:hover, .header-link:hover {
+    color:#EEDFC7;
+  }
+  .weens {
+    width: 48%;
+    border-radius: 1.5rem;
+    margin: 0.125rem;
+    cursor: pointer;
+    transition: 0.3s all ease;
+  }
+  .weens:hover {
+    transform: scale(0.9);
+  }
+  .ween-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .modalImg {
+    width: 95%;
+    max-width: 550px;
+    margin: 0 auto;
+    animation: zoom 0.3s linear;
+    border-radius: 1.5rem;
+  }
+  .modalTxt {
+    text-align: center;
+    padding-top: 1rem;
+    margin: 0 auto;
+    max-width: 500px;
+  }
+}
+
+/* Media query jazz for large full screen */
+@media (min-width: 1025px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "header header header"
+      "content content sidebar"
+      "footer footer footer";
+    grid-gap: 0.5rem;
+    grid-auto-flow: row;
+  }
+  body {
+    margin: 2rem;
+  }
+
+  .header-link {
+    font-size: 3.25rem;
+    letter-spacing: -0.35rem;
+  }
+  .header {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .currents-item {
+    max-width: 250px;
+    min-width: 250px;
+    border: solid 2px;
+    border-radius: 0.75rem;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+  h1 {
+    font-size: 6.5rem;
+    align-items: center;
+    letter-spacing: -0.65rem;
+  }
+  h2 {
+    font-size: 2.25rem;
+    letter-spacing: -0.25rem;
+  }
+  .linkedin, .email {
+    width: auto;
+    height: 48px;
+    opacity: 0.8;
+  }
+  #hamitems { 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+  }
+  #hamitems .header-link .other-pages {
+    color: white;
+    text-decoration: none;
+    
+  }
+  #hamnav label, #hamburger { 
+    display: none;
+  }
+  .home:hover, .header-link:hover {
+    color:#EEDFC7;
+  }
+  .weens {
+    width: 32%;
+    border-radius: 1.5rem;
+    margin: 0.125rem;
+    cursor: pointer;
+    transition: 0.3s all ease;
+  }
+  .weens:hover {
+    transform: scale(0.9);
+  }
+  .images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .modalImg {
+    width: 95%;
+    max-width: 625px;
+    margin: 0 auto;
+    animation: zoom 0.3s linear;
+    border-radius: 1.5rem;
+  }
+  .modalTxt {
+    text-align: center;
+    padding-top: 1rem;
+    margin: 0 auto;
+    max-width: 575px;
+  }
+}
