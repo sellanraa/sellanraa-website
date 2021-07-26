@@ -76,10 +76,11 @@ label:hover {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
-  }
+}
 .currents-item {
   min-width: 280px;
-  border: solid 2px;
+  background-color: #F6EFE3;
+  /* border: solid 2px;*/
   border-radius: 0.75rem;
   margin: 0rem 0rem 1rem 0rem;
 }
@@ -314,8 +315,9 @@ li {
   .currents-item {
     max-width: 425px;
     min-width: 425px;
-    border: solid 2px;
-    border-radius: 0.75rem;
+    background-color: #F6EFE3;
+    /* border: solid 2px;
+    border-radius: 0.75rem; */
     margin: 0rem 0rem 1rem 0rem;
   }
   h2 {
@@ -407,8 +409,9 @@ li {
   .currents-item {
     max-width: 425px;
     min-width: 425px;
-    border: solid 2px;
-    border-radius: 0.75rem;
+    background-color: #F6EFE3;
+    /* border: solid 2px;
+    border-radius: 0.75rem; */
     margin: 0rem 0rem 1rem 0rem;
   }
   h2 {
@@ -497,8 +500,9 @@ li {
   .currents-item {
     max-width: 250px;
     min-width: 250px;
-    border: solid 2px;
-    border-radius: 0.75rem;
+    background-color: #F6EFE3;
+    /* border: solid 2px;
+    border-radius: 0.75rem; */
     margin: 0rem 0rem 1rem 0rem;
   }
   h1 {
