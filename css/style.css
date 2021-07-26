@@ -180,6 +180,8 @@ li {
 .link {
   text-decoration: none;
   color: #5D483D;
+  line-height: 1.5rem;
+
 }
 .link:hover {
   color: #B57119;
