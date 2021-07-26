@@ -23,7 +23,7 @@
   justify-content: space-between;
   align-items: center;
   grid-area: header;
-  background: url(../img/rockybeach.jpg) top / cover no-repeat #D58D19;
+  background: url(../img/rockybeach.jpg) center center / cover no-repeat #D58D19;
 }
 .top-header {
   display: flex;
@@ -97,7 +97,7 @@ label:hover {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  background: url(../img/rockybeach.jpg) top center / cover no-repeat #D58D19;
+  background: url(../img/rockybeach.jpg) left bottom / cover no-repeat #D58D19;
 }
 body {
   margin: 0.5rem;
@@ -134,8 +134,8 @@ h2 {
   letter-spacing: -0.15rem;
   text-align: center;
   opacity: 0.85;
-  padding: 0.5rem;
-  margin: 0rem 0rem 0rem 0rem;
+  padding: 0.25rem 0rem 0.25rem 0rem;
+  margin: 0rem;
 }
 h3 {
   flex-grow: 5;
@@ -321,6 +321,8 @@ li {
   h2 {
     font-size: 1.5rem;
     letter-spacing: -0.2rem;
+    padding: 0.25rem 0rem 0.25rem 0rem;
+    margin: 0rem;
   }
   .linkedin, .email {
     width: auto;
@@ -414,6 +416,8 @@ li {
   h2 {
     font-size: 2.25rem;
     letter-spacing: -0.25rem;
+    padding: 0.25rem 0rem 0.25rem 0rem;
+    margin: 0rem;
   }
   .linkedin, .email {
     width: auto;
@@ -509,6 +513,8 @@ li {
   h2 {
     font-size: 2.25rem;
     letter-spacing: -0.25rem;
+    padding: 0.25rem 0rem 0.25rem 0rem;
+    margin: 0rem;
   }
   .linkedin, .email {
     width: auto;
