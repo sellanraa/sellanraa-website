@@ -19,4 +19,6 @@ I looked into accessibility issues and I tried to add alt tags, but when I sent 
 
 As far as Javascript, I've inserted a random image loader for the main/bio page (index.html) so one of nine pictures of me will load randomly. I've also integrated the option to enlarge ween photos as well on each of the dog pages with a modal going from being hidden to visible and a function grabbing the appropriate image and inserting it over top. That was exhausting.
 
+Anyway, that should be FOUR total 'features'...hopefully? 
+
 Many thanks to Don, Shannon, and Andrei for some help on some of these things. While the logic of Javascript makes sense to me because of some Python tinkering last fall/winter, the syntax just throws me. The burger menu was also painful and, while adequate, I'm disappointed I couldn't figure out a transform that would work. I may still tinker with that before the deadline.
