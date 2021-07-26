@@ -71,6 +71,7 @@ label:hover {
   grid-area: content;
   background: #FCF5EC;
 }
+
 #currents {
   display: flex;
   flex-wrap: wrap;
@@ -86,7 +87,7 @@ label:hover {
 }
 .currents-list-item {
   line-height: 1.25rem;
-  padding: 0rem 0.5rem 0.5rem 0rem;
+  padding: 0.5rem 0.5rem 0.5rem 0rem;
   text-align: center;
 }
 .sidebar {
