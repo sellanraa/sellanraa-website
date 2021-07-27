@@ -186,6 +186,9 @@ li {
   margin: 0rem 0rem 0rem 1.25rem;
   line-height: 1.25rem;
 }
+.links {
+  text-align: center;
+}
 .link {
   text-decoration: none;
   color: #5D483D;
