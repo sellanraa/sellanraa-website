@@ -225,7 +225,7 @@ li {
   margin: 0rem 0rem 0rem 0rem;
   text-align: right;
 }
-.linkedin, .email {
+.linkedin, .email, .twitter {
   width: auto;
   height: 48px;
   margin-top: 0.5rem;
@@ -233,7 +233,7 @@ li {
   opacity: 0.8;
   transition: 0.3s all ease;
 }
-.linkedin:hover, .email:hover {
+.linkedin:hover, .email:hover, .twitter:hover {
   transform: scale(1.2);
 }
 #harvey {
