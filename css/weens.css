@@ -23,7 +23,7 @@
   justify-content: space-between;
   align-items: center;
   grid-area: header;
-  background: url(../img/rockybeach.jpg) center center / cover no-repeat #D58D19;
+  background: url(../img/rockybeach.jpg) top / cover no-repeat #D58D19;
 }
 .top-header {
   display: flex;
