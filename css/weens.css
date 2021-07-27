@@ -99,6 +99,8 @@ label:hover {
   flex-wrap: nowrap;
   background: url(../img/rockybeach.jpg) left bottom / cover no-repeat #D58D19;
 }
+
+/* Text formatting start */
 body {
   margin: 0.5rem;
   background: #CDC8BC;
@@ -198,7 +200,7 @@ li {
 .link:hover {
   color: #B57119;
 }
-
+/* Text formatting end */
 /* pictures start */
 .portrait {
   width: 100%;

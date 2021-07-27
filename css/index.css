@@ -113,6 +113,8 @@ body {
   border: 3px solid #5D483D;
   border-radius: 2rem;
 }
+
+/* Text formatting start */
 p {
   margin: 0.25rem 0.5rem 0.25rem 0.5rem;
   line-height: 1.25rem;
@@ -197,6 +199,7 @@ li {
 .link:hover {
   color: #B57119;
 }
+/* Text formatting end */
 
 /* pictures start */
 .portrait {
