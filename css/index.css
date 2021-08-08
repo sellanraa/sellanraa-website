@@ -90,6 +90,63 @@ label:hover {
   padding: 0.5rem 0.5rem 0.5rem 0rem;
   text-align: center;
 }
+/* feal start */
+
+#public-performance {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#public-performance-title {
+  font-family: "Spartan", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: -0.15rem;
+  text-align: center;
+  background-color: #EEDFC7;
+  opacity: 0.85;
+  padding: 0rem;
+  margin: auto;
+  max-width: 17rem;
+}
+.public-performance-item {
+  min-width: 280px;
+  line-height: 1.25rem;
+  padding: 0.5rem 0.5rem 0.5rem 0rem;
+  text-align: center;
+}
+ol {
+  max-width: 800px;
+  padding: 0rem 2rem 0rem 2rem;
+  text-align: center;
+}
+#about {
+  font-family: "Spartan", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: -0.15rem;
+  text-align: center;
+  background-color: #EEDFC7;
+  opacity: 0.85;
+  padding: 0rem;
+  margin: auto;
+  max-width: 2rem;
+}
+#guiding-principles {
+  font-family: "Spartan", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: -0.15rem;
+  text-align: center;
+  background-color: #EEDFC7;
+  opacity: 0.85;
+  padding: 0rem;
+  margin: auto;
+  max-width: 10rem;
+}
+/* feal end */
+
 .sidebar {
   grid-area: sidebar;
   background: #F6EFE3;
@@ -153,7 +210,6 @@ h3 {
   padding: 0rem;
   margin: auto;
   max-width: 5.5rem;
-
 }
 h4 {
   flex-grow: 5;
@@ -382,6 +438,12 @@ li {
     margin: 0 auto;
     max-width: 450px;
   }
+  ol {
+    max-width: 800px;
+    padding: 0rem 3.5rem 0rem 3.5rem;
+    text-align: center;
+  }
+
 }
 /* Media query jazz for small full screen */
 @media (min-width: 769px) and (max-width:1024px) {
@@ -477,6 +539,11 @@ li {
     padding-top: 1rem;
     margin: 0 auto;
     max-width: 500px;
+  }
+  ol {
+    max-width: 800px;
+    padding: 0rem 3rem 0rem 3rem;
+    text-align: center;
   }
 }
 
@@ -574,5 +641,10 @@ li {
     padding-top: 1rem;
     margin: 0 auto;
     max-width: 575px;
+  }
+  ol {
+    max-width: 800px;
+    padding: 0rem 5rem 0rem 5rem;
+    text-align: center;
   }
 }
