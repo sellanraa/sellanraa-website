@@ -111,7 +111,7 @@ body {
   color: #544132;
   padding: 0.5rem;
   border: 3px solid #5D483D;
-  border-radius: 2rem;
+  border-radius: 1.25rem;
 }
 p {
   margin: 0.25rem 0.5rem 0.25rem 0.5rem;
@@ -211,7 +211,7 @@ li {
 }
 .weens {
   width: 100%;
-  border-radius: 1.5rem;
+  border-radius: 1.25rem;
   cursor: pointer;
   transition: 0.3s all ease;
 }
@@ -240,7 +240,7 @@ li {
 }
 #harvey {
   width: 100%;
-  border-radius: 1.5rem;
+  border-radius: 1.25rem;
 }
 /* pictures end */
 
@@ -270,7 +270,7 @@ li {
   max-width: 500px;
   margin: 0 auto;
   animation: zoom 0.3s linear;
-  border-radius: 1.5rem;
+  border-radius: 1.25rem;
 }
 .modalTxt {
   text-align: center;
@@ -357,7 +357,7 @@ li {
   /* image adjustments  */
   .weens {
     width: 48%;
-    border-radius: 1.5rem;
+    border-radius: 1.25rem;
     margin: 0.125rem;
     cursor: pointer;
     transition: 0.3s all ease;
@@ -377,7 +377,7 @@ li {
     max-width: 500px;
     margin: 0 auto;
     animation: zoom 0.3s linear;
-    border-radius: 1.5rem;
+    border-radius: 1.25rem;
   }
   .modalTxt {
     text-align: center;
@@ -452,7 +452,7 @@ li {
   }
   .weens {
     width: 48%;
-    border-radius: 1.5rem;
+    border-radius: 1.25rem;
     margin: 0.125rem;
     cursor: pointer;
     transition: 0.3s all ease;
@@ -472,7 +472,7 @@ li {
     max-width: 550px;
     margin: 0 auto;
     animation: zoom 0.3s linear;
-    border-radius: 1.5rem;
+    border-radius: 1.25rem;
   }
   .modalTxt {
     text-align: center;
@@ -548,7 +548,7 @@ li {
   }
   .weens {
     width: 32%;
-    border-radius: 1.5rem;
+    border-radius: 1.25rem;
     margin: 0.125rem;
     cursor: pointer;
     transition: 0.3s all ease;
@@ -568,7 +568,7 @@ li {
     max-width: 625px;
     margin: 0 auto;
     animation: zoom 0.3s linear;
-    border-radius: 1.5rem;
+    border-radius: 1.25rem;
   }
   .modalTxt {
     text-align: center;
