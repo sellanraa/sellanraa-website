@@ -20,7 +20,9 @@ var portrait = [
     './img/me/me16.jpg',
     './img/me/me17.jpg',
     './img/me/me18.jpg',
-    './img/me/me19.jpg'
+    './img/me/me19.jpg',
+    './img/me/me20.jpg',
+    './img/me/me21.jpg'
     ];
 
 var image = 
